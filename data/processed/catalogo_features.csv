@@ -1,0 +1,41 @@
+feature,familia,fonte,referencia,evidencia_eda,risco,tipo,transformacao,modelo_aluno,modelo_municipio
+rede,rede,Gold,ano-alvo,seção 8,baixo,categórica,ausente + one-hot,True,False
+sigla_uf,territorio_categorico,Gold / Base dos Dados,fixo,"seções 8, 12 e 14",pode mascarar políticas estaduais; avaliado com e sem território,categórica,ausente + one-hot,True,True
+nome_regiao,territorio_categorico,Gold / Base dos Dados,fixo,"seções 8, 12 e 14",pode mascarar políticas estaduais; avaliado com e sem território,categórica,ausente + one-hot,True,True
+capital_uf,territorio_categorico,Gold / Base dos Dados,fixo,"seções 8, 12 e 14",pode mascarar políticas estaduais; avaliado com e sem território,categórica,ausente + one-hot,True,True
+amazonia_legal,territorio_categorico,Gold / Base dos Dados,fixo,"seções 8, 12 e 14",pode mascarar políticas estaduais; avaliado com e sem território,categórica,ausente + one-hot,True,True
+lat,territorio_numerico,Base dos Dados,fixo,seção 8,baixo,numérica,mediana + padronização,True,True
+lon,territorio_numerico,Base dos Dados,fixo,seção 8,baixo,numérica,mediana + padronização,True,True
+taxa_lag,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+taxa_lag_suavizada,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+media_portugues_lag,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+taxa_presenca_lag,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+n_avaliados_lag,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + log1p + padronização,True,True
+taxa_lag_uf,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+taxa_lag_vizinhos,historico,Gold,ano-alvo - 1,"seções 7, 8, 9 e 14",só existe no alvo 2024 em diante,numérica,mediana + padronização,True,True
+idhm,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + padronização,True,True
+idhm_e,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + padronização,True,True
+renda_pc,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + log1p + padronização,True,True
+indice_gini,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + padronização,True,True
+prop_pobreza_criancas,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + padronização,True,True
+expectativa_anos_estudo,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + padronização,True,True
+populacao,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + log1p + padronização,True,True
+pib_per_capita,socioeconomico,Atlas 2010 / IBGE,2010; até ano-alvo - 1,seções 11 e 12,Atlas defasado; alta redundância,numérica,mediana + log1p + padronização,True,True
+escolas_anos_iniciais,infraestrutura,Censo Escolar,ano-alvo - 1,seção 11,baixo,numérica,mediana + log1p + padronização,True,True
+matriculas_anos_iniciais,infraestrutura,Censo Escolar,ano-alvo - 1,seção 11,baixo,numérica,mediana + log1p + padronização,True,True
+pct_escolas_rurais,infraestrutura,Censo Escolar,ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+pct_biblioteca,infraestrutura,Censo Escolar,ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+pct_esgoto_rede,infraestrutura,Censo Escolar,ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+alunos_por_turma,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + log1p + padronização,True,True
+alunos_por_docente,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + log1p + padronização,True,True
+alunos_turma_2ano,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+pct_docente_superior,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+pct_docente_adequado,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+pct_docente_baixa_regularidade,docentes_turmas,Censo Escolar / INEP,2022; ano-alvo - 1,seção 11,baixo,numérica,mediana + padronização,True,True
+distorcao_idade_serie,fluxo_escolar,INEP,2022,seções 11 e 12,pode refletir desempenho anterior,numérica,mediana + padronização,True,True
+taxa_aprovacao,fluxo_escolar,INEP,2022,seções 11 e 12,pode refletir desempenho anterior,numérica,mediana + padronização,True,True
+taxa_abandono,fluxo_escolar,INEP,2022,seções 11 e 12,pode refletir desempenho anterior,numérica,mediana + padronização,True,True
+invest_aluno_fundamental,financiamento,Fundeb / SIOPE,ano-alvo - 1,seção 11,associação fraca; municipal e estadual diferem,numérica,mediana + log1p + padronização,True,True
+alunos_previstos_escola,escola,Gold,ano-alvo,seção 8,supõe lista de alunos prévia à prova,numérica,mediana + log1p + padronização,True,False
+meta_ano,metas,Gold,definida antes do ano-alvo,seção 10,só no modelo municipal,numérica,mediana + padronização,False,True
+esforco_meta,metas,Gold,definida antes do ano-alvo,seção 10,só no modelo municipal,numérica,mediana + padronização,False,True

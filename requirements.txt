@@ -1,0 +1,13 @@
+pandas==3.0.5
+numpy==2.5.2
+scipy==1.18.0
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.1
+pyarrow==25.0.1
+db-dtypes==1.7.1
+google-cloud-bigquery==3.43.0
+google-cloud-bigquery-storage==2.40.0
+shap==0.54.1
+lightgbm==4.7.0
+xgboost==3.4.1

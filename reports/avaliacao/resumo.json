@@ -1,0 +1,37 @@
+{
+  "validacao_cruzada": {
+    "rmse_treino": 10.90349811155541,
+    "rmse_cv": 11.287834714728817,
+    "dp_cv": 0.8583676159591221,
+    "r2_cv": 0.5683097084112899
+  },
+  "ganho_rmse_sobre_persistencia": {
+    "p2_5": 2.357546357111975,
+    "mediana": 4.701872039650659,
+    "p97_5": 6.858436328666185
+  },
+  "temporal": {
+    "rmse": 15.267731635157777,
+    "mae": 12.000959902136024,
+    "r2": 0.3645027562142351,
+    "auc": 0.6459179156872921,
+    "acuracia_balanceada": 0.6099257514670073,
+    "precisao_nao_atinge": 0.5648464163822525,
+    "recall_nao_atinge": 0.6771685761047463,
+    "municipios_treino": 4821,
+    "municipios_previstos": 5232
+  },
+  "bases": {
+    "treino": 2738,
+    "validacao": 1359,
+    "teste": 1135,
+    "mesorregioes_teste": 32
+  },
+  "modelo": {
+    "algoritmo": "Lasso",
+    "alpha": 0.06672367170464207,
+    "features": 38,
+    "termos": 83,
+    "termos_ativos": 30
+  }
+}

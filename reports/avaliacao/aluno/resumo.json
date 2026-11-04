@@ -1,0 +1,59 @@
+{
+  "modelo": {
+    "algoritmo": "LightGBM",
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "num_leaves": 7,
+    "min_child_samples": 1000,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.6,
+    "random_state": 42,
+    "features": 38
+  },
+  "bases": {
+    "treino": 1296903,
+    "validacao": 277953,
+    "teste": 276972,
+    "mesorregioes_teste": 33,
+    "alunos_ajuste_final": 1851828
+  },
+  "validacao_cruzada": {
+    "auc_treino": 0.6632388592262682,
+    "auc_cv": 0.634020459429275,
+    "dp_cv": 0.01731481248157479
+  },
+  "validacao_cruzada_uf": {
+    "auc_treino": 0.6653682895734807,
+    "auc_cv": 0.6291754029443201,
+    "dp_cv": 0.03097517184770098
+  },
+  "validacao_cruzada_sem_historico": {
+    "auc_treino": 0.6540866781113237,
+    "auc_cv": 0.6015865147197165,
+    "dp_cv": 0.019450231512278923
+  },
+  "temporal": {
+    "auc": 0.7078703127791489,
+    "pr_auc": 0.8052072122412861,
+    "brier": 0.20555678762972687,
+    "log_loss": 0.5936991881235276,
+    "alunos_2023": 1502809
+  },
+  "ic95_auc": {
+    "p2_5": 0.6774904780109793,
+    "mediana": 0.728479448915037,
+    "p97_5": 0.7783716738155982
+  },
+  "ic95_ganho_auc_persistencia": {
+    "p2_5": 0.006061251732733555,
+    "mediana": 0.015692680004565973,
+    "p97_5": 0.028420229347914706
+  },
+  "limiar_validacao": 0.6300000000000003,
+  "teto_auc": {
+    "modelo": 0.7301937472880982,
+    "municipio_rede": 0.7513266536673973,
+    "escola": 0.7977317905471596
+  }
+}

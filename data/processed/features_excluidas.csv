@@ -1,0 +1,16 @@
+coluna,motivo,justificativa
+proficiencia,vazamento,"define o alvo (EDA, seção 13)"
+"media_portugues, proporcao_aluno_nivel_*, taxa_alfabetizacao do mesmo ano",vazamento,"agregam o alvo (EDA, seção 13)"
+"presenca, preenchimento_caderno e IDs",vazamento,"conhecidas só após a prova (EDA, seção 13)"
+peso_aluno,vazamento,"criado após a prova; usado só como sample_weight (EDA, seções 6 e 13)"
+"gap_meta_ano, gap_ate_2030, atingiu_meta_ano",vazamento,"revelam o alvo municipal (EDA, seção 13)"
+médias de escola ou município do mesmo ano,vazamento,"incluem o alvo (EDA, seção 13)"
+id_aluno,identificação,"identificador individual, sem conteúdo preditivo e sem uso fora do treino"
+id_escola,não estável,"recodificado a cada ano e sem correspondência com o Censo (EDA, seção 5)"
+id_municipio,generalização,não se aplica a municípios fora do treino; o histórico já cobre esse sinal
+nome_mesorregiao,validação,"é a chave de separação entre treino e teste (EDA, seção 8)"
+ano,generalização,não se projeta para anos futuros; usado só para filtro
+serie,sem variância,o indicador avalia apenas o 2º ano
+caderno,vazamento,"versão da prova, definida só na aplicação"
+"pct_internet_alunos, horas_aula_2ano, despesa_professor_aluno",sem sinal,"associação próxima de zero (EDA, seção 11)"
+proporções por nível do ano anterior,indisponível,"não existem em 2023 (EDA, seção 6)"
